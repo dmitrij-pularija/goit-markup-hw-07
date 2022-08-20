@@ -1,0 +1,83 @@
+.section__background {
+    background: $button-filter-color;
+}
+
+.team__header {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: calc(42 / 36);
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $header-text-color;
+}
+
+.team__list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.team__card {
+    background: $background-color;
+    box-shadow: 0px 1px 3px $shadow-filter-color3, 0px 1px 1px $shadow-modal-color2, 0px 2px 1px $backdrop-background-color;
+    border-radius: 0px 0px 4px 4px;
+}
+
+.member {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.member__name {
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: calc(19 /16);
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $header-text-color;
+}
+
+.member__profession {
+    font-size: 16px;
+    line-height: calc(19 / 16);
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $simple-text-color;
+}
+
+.social {
+    margin-top: 16px;
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.social__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border-style: hidden;
+    cursor: pointer;
+    color: $member-social-link-color;
+    background-color: $background-color;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        color: $background-color;
+        background-color: $hover-color;
+    }
+}
+
+.social__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: currentColor;
+}
